@@ -1,0 +1,777 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Online Coaching Institutes</title>
+<link rel="stylesheet" href="style.css">
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #222;
+    line-height: 1.6;
+}
+
+header {
+    background: #102a43;
+    color: white;
+    text-align: center;
+    padding: 28px 15px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+nav {
+    background: #176b87;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 12px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 13px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background: #102a43;
+    border-radius: 5px;
+}
+
+.hero {
+    background: linear-gradient(135deg, #176b87, #48a9a6);
+    color: white;
+    text-align: center;
+    padding: 75px 20px;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 750px;
+    margin: 0 auto 20px;
+    font-size: 18px;
+}
+
+.btn {
+    display: inline-block;
+    background: #ffb703;
+    color: #17202a;
+    padding: 11px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.btn:hover {
+    background: #ffd166;
+}
+
+section {
+    padding: 45px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+section h2 {
+    text-align: center;
+    color: #102a43;
+    margin-bottom: 25px;
+    font-size: 29px;
+}
+
+section h3 {
+    color: #176b87;
+    margin-bottom: 10px;
+}
+
+.intro {
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.card p {
+    margin-bottom: 10px;
+}
+
+.card ul {
+    padding-left: 20px;
+}
+
+.highlight {
+    background: #e4f4f7;
+    padding: 30px 20px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+form {
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 14px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+button {
+    font-size: 15px;
+}
+
+.question {
+    background: white;
+    padding: 18px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.question label {
+    font-weight: normal;
+    margin-top: 8px;
+}
+
+.question input {
+    width: auto;
+    margin-right: 8px;
+}
+
+#result {
+    display: none;
+    background: #e4f4f7;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+details {
+    background: white;
+    padding: 17px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: #176b87;
+}
+
+footer {
+    background: #102a43;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+    margin-top: 25px;
+}
+
+footer a {
+    color: #ffcf70;
+}
+
+.small-note {
+    font-size: 14px;
+    color: #555;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 25px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    section h2 {
+        font-size: 25px;
+    }
+
+    nav a {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+</style></head><body><!-- WEBSITE HEADER --><header>
+    <h1>Online Coaching Institutes</h1>
+    <p>Your Learning Journey Starts Here!</p>
+    <p>Learn Today, Succeed Tomorrow!</p>
+</header><!-- NAVIGATION MENU --><nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#courses">Courses</a>
+    <a href="#programs">Programs</a>
+    <a href="#skills">Skills</a>
+    <a href="#registration">Register</a>
+    <a href="#quiz">Quiz</a>
+    <a href="#schedule">Schedule</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+</nav><!-- HOME SECTION --><div class="hero" id="home">
+    <h2>Welcome to Online Coaching Institutes</h2>
+    <p>
+        Improve your knowledge, develop new skills, and achieve your
+        academic and career goals with our online learning programs.
+    </p>
+    <a class="btn" href="#courses">Explore Courses</a>
+    <a class="btn" href="#registration">Register Now</a>
+</div><!-- ABOUT US --><section id="about">
+    <h2>About Our Institute</h2><div class="intro">
+    <p>
+        Online Coaching Institutes is a learning platform designed
+        to help students improve their knowledge and skills.
+        We provide learning resources across different subjects
+        and technology areas.
+    </p>
+
+    <p>
+        Our goal is to encourage continuous learning, independent
+        thinking, problem-solving, and career development.
+    </p>
+</div>
+
+<br>
+
+<div class="grid">
+    <div class="card">
+        <h3>🎯 Our Mission</h3>
+        <p>To make learning accessible, understandable, and useful for students.</p>
+    </div>
+
+    <div class="card">
+        <h3>🌟 Our Vision</h3>
+        <p>To encourage lifelong learning and help learners build a strong future.</p>
+    </div>
+
+    <div class="card">
+        <h3>📚 Quality Learning</h3>
+        <p>Support learners with organized topics, practice, and learning activities.</p>
+    </div>
+</div>
+
+</section><!-- WHY CHOOSE US --><section id="why">
+    <h2>Why Choose Our Institute?</h2><div class="grid">
+    <div class="card">
+        <h3>Flexible Learning</h3>
+        <p>Explore learning resources at a convenient time.</p>
+    </div>
+
+    <div class="card">
+        <h3>Easy-to-Understand Topics</h3>
+        <p>Learn concepts step by step with clear explanations.</p>
+    </div>
+
+    <div class="card">
+        <h3>Practice Activities</h3>
+        <p>Check your understanding with quizzes and exercises.</p>
+    </div>
+
+    <div class="card">
+        <h3>Skill Development</h3>
+        <p>Build useful academic, technical, and communication skills.</p>
+    </div>
+</div>
+
+</section><!-- COURSES --><section id="courses">
+    <h2>Our Courses</h2>
+    <p class="intro">
+        Explore our learning areas and choose a course that matches your interests.
+    </p><br>
+
+<div class="grid">
+
+    <div class="card">
+        <h3>💻 Python Programming</h3>
+        <p>Learn Python basics, variables, conditions, loops, and functions.</p>
+        <p><strong>Level:</strong> Beginner</p>
+        <a class="btn" href="#registration">Choose Course</a>
+    </div>
+
+    <div class="card">
+        <h3>🌐 Web Development</h3>
+        <p>Learn HTML, CSS, and the fundamentals of creating websites.</p>
+        <p><strong>Level:</strong> Beginner</p>
+        <a class="btn" href="#registration">Choose Course</a>
+    </div>
+
+    <div class="card">
+        <h3>🤖 Artificial Intelligence</h3>
+        <p>Explore AI concepts, applications, and intelligent systems.</p>
+        <p><strong>Level:</strong> Beginner</p>
+        <a class="btn" href="#registration">Choose Course</a>
+    </div>
+
+    <div class="card">
+        <h3>📊 Data Science</h3>
+        <p>Discover data collection, analysis, visualization, and interpretation.</p>
+        <p><strong>Level:</strong> Beginner</p>
+        <a class="btn" href="#registration">Choose Course</a>
+    </div>
+
+    <div class="card">
+        <h3>🗄️ Database Management</h3>
+        <p>Understand databases, tables, queries, and data organization.</p>
+        <p><strong>Level:</strong> Beginner</p>
+        <a class="btn" href="#registration">Choose Course</a>
+    </div>
+
+    <div class="card">
+        <h3>🖥️ C Programming</h3>
+        <p>Practice programming fundamentals, functions, arrays, and pointers.</p>
+        <p><strong>Level:</strong> Beginner</p>
+        <a class="btn" href="#registration">Choose Course</a>
+    </div>
+
+    <div class="card">
+        <h3>☁️ Cloud Computing</h3>
+        <p>Learn cloud concepts, services, storage, and computing basics.</p>
+        <p><strong>Level:</strong> Beginner</p>
+        <a class="btn" href="#registration">Choose Course</a>
+    </div>
+
+    <div class="card">
+        <h3>🔐 Cybersecurity Basics</h3>
+        <p>Understand online safety, privacy, passwords, and security concepts.</p>
+        <p><strong>Level:</strong> Beginner</p>
+        <a class="btn" href="#registration">Choose Course</a>
+    </div>
+
+    <div class="card">
+        <h3>📈 Digital Marketing</h3>
+        <p>Explore digital content, online audiences, and marketing strategies.</p>
+        <p><strong>Level:</strong> Beginner</p>
+        <a class="btn" href="#registration">Choose Course</a>
+    </div>
+
+    <div class="card">
+        <h3>🧮 Mathematics</h3>
+        <p>Strengthen mathematical concepts and problem-solving skills.</p>
+        <p><strong>Level:</strong> Beginner</p>
+        <a class="btn" href="#registration">Choose Course</a>
+    </div>
+
+    <div class="card">
+        <h3>🗣️ Communication Skills</h3>
+        <p>Improve writing, speaking, presentation, and communication skills.</p>
+        <p><strong>Level:</strong> All Levels</p>
+        <a class="btn" href="#registration">Choose Course</a>
+    </div>
+
+    <div class="card">
+        <h3>🧠 Problem Solving</h3>
+        <p>Develop logical thinking, reasoning, and decision-making abilities.</p>
+        <p><strong>Level:</strong> All Levels</p>
+        <a class="btn" href="#registration">Choose Course</a>
+    </div>
+
+</div>
+
+</section><!-- LEARNING PROGRAMS --><section id="programs">
+    <h2>Our Learning Programs</h2><div class="grid">
+    <div class="card">
+        <h3>Beginner Program</h3>
+        <p>Build a foundation and understand essential concepts.</p>
+        <ul>
+            <li>Basic concepts</li>
+            <li>Step-by-step learning</li>
+            <li>Practice exercises</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>Intermediate Program</h3>
+        <p>Improve your knowledge through practical activities.</p>
+        <ul>
+            <li>Advanced topics</li>
+            <li>Problem-solving exercises</li>
+            <li>Small projects</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>Career Development</h3>
+        <p>Prepare for future academic and professional opportunities.</p>
+        <ul>
+            <li>Resume preparation</li>
+            <li>Interview practice</li>
+            <li>Communication skills</li>
+        </ul>
+    </div>
+</div>
+
+</section><!-- SKILLS --><section id="skills">
+    <h2>Skills You Can Develop</h2><div class="grid">
+    <div class="card">
+        <h3>Technical Skills</h3>
+        <p>Programming, web development, databases, and technology fundamentals.</p>
+    </div>
+
+    <div class="card">
+        <h3>Analytical Thinking</h3>
+        <p>Understand information, identify patterns, and solve problems.</p>
+    </div>
+
+    <div class="card">
+        <h3>Communication</h3>
+        <p>Express ideas clearly and communicate with confidence.</p>
+    </div>
+
+    <div class="card">
+        <h3>Time Management</h3>
+        <p>Organize learning activities and complete tasks effectively.</p>
+    </div>
+
+    <div class="card">
+        <h3>Creativity</h3>
+        <p>Explore new ideas and develop innovative solutions.</p>
+    </div>
+
+    <div class="card">
+        <h3>Continuous Learning</h3>
+        <p>Build a habit of learning and improving your knowledge.</p>
+    </div>
+</div>
+
+</section><!-- REGISTRATION --><section id="registration">
+    <h2>Student Registration Form</h2><p class="intro">
+    Fill in the form below to express your interest in a course.
+</p>
+
+<br>
+
+<form id="registrationForm">
+
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name"
+           placeholder="Enter your full name" required>
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email"
+           placeholder="Enter your email" required>
+
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone"
+           placeholder="Enter your phone number"
+           pattern="[0-9]{10}" maxlength="10" required>
+
+    <label for="course">Select Course</label>
+    <select id="course" name="course" required>
+        <option value="">-- Select a Course --</option>
+        <option>Python Programming</option>
+        <option>Web Development</option>
+        <option>Artificial Intelligence</option>
+        <option>Data Science</option>
+        <option>Database Management</option>
+        <option>C Programming</option>
+        <option>Cloud Computing</option>
+        <option>Cybersecurity Basics</option>
+        <option>Digital Marketing</option>
+        <option>Mathematics</option>
+        <option>Communication Skills</option>
+        <option>Problem Solving</option>
+    </select>
+
+    <label for="education">Educational Qualification</label>
+    <select id="education" name="education" required>
+        <option value="">-- Select Qualification --</option>
+        <option>School Student</option>
+        <option>Higher Secondary</option>
+        <option>Diploma Student</option>
+        <option>Undergraduate Student</option>
+        <option>Graduate</option>
+        <option>Other</option>
+    </select>
+
+    <label for="goal">Your Learning Goal</label>
+    <textarea id="goal" name="goal" rows="4"
+              placeholder="What would you like to learn?"></textarea>
+
+    <button type="submit" class="btn">Submit Registration</button>
+    <button type="reset" class="btn">Clear Form</button>
+
+    <p class="small-note">
+        Demo form: this page displays a confirmation message.
+        It does not send your information to a server.
+    </p>
+</form>
+
+</section><!-- KNOWLEDGE QUIZ --><section id="quiz">
+    <h2>Knowledge Test Quiz</h2><p class="intro">
+    Answer these 10 questions to test your basic computer knowledge.
+</p>
+
+<br>
+
+<form id="quizForm">
+
+    <div class="question">
+        <h3>1. What does CPU stand for?</h3>
+        <label><input type="radio" name="q1" value="a" required> Central Program Unit</label>
+        <label><input type="radio" name="q1" value="b"> Central Processing Unit</label>
+        <label><input type="radio" name="q1" value="c"> Computer Personal Unit</label>
+    </div>
+
+    <div class="question">
+        <h3>2. Which language is used to structure web pages?</h3>
+        <label><input type="radio" name="q2" value="a" required> HTML</label>
+        <label><input type="radio" name="q2" value="b"> SQL</label>
+        <label><input type="radio" name="q2" value="c"> C</label>
+    </div>
+
+    <div class="question">
+        <h3>3. Which one is a programming language?</h3>
+        <label><input type="radio" name="q3" value="a" required> Monitor</label>
+        <label><input type="radio" name="q3" value="b"> Keyboard</label>
+        <label><input type="radio" name="q3" value="c"> Python</label>
+    </div>
+
+    <div class="question">
+        <h3>4. What does AI stand for?</h3>
+        <label><input type="radio" name="q4" value="a" required> Automatic Internet</label>
+        <label><input type="radio" name="q4" value="b"> Artificial Intelligence</label>
+        <label><input type="radio" name="q4" value="c"> Advanced Input</label>
+    </div>
+
+    <div class="question">
+        <h3>5. Which device is used to type text?</h3>
+        <label><input type="radio" name="q5" value="a" required> Printer</label>
+        <label><input type="radio" name="q5" value="b"> Monitor</label>
+        <label><input type="radio" name="q5" value="c"> Keyboard</label>
+    </div>
+
+    <div class="question">
+        <h3>6. Which one is a web browser?</h3>
+        <label><input type="radio" name="q6" value="a" required> Google Chrome</label>
+        <label><input type="radio" name="q6" value="b"> Microsoft Excel</label>
+        <label><input type="radio" name="q6" value="c"> Calculator</label>
+    </div>
+
+    <div class="question">
+        <h3>7. Which technology styles a web page?</h3>
+        <label><input type="radio" name="q7" value="a" required> SQL</label>
+        <label><input type="radio" name="q7" value="b"> CSS</label>
+        <label><input type="radio" name="q7" value="c"> CPU</label>
+    </div>
+
+    <div class="question">
+        <h3>8. Which one is an output device?</h3>
+        <label><input type="radio" name="q8" value="a" required> Mouse</label>
+        <label><input type="radio" name="q8" value="b"> Keyboard</label>
+        <label><input type="radio" name="q8" value="c"> Monitor</label>
+    </div>
+
+    <div class="question">
+        <h3>9. What is the full form of URL?</h3>
+        <label><input type="radio" name="q9" value="a" required> User Reading Link</label>
+        <label><input type="radio" name="q9" value="b"> Uniform Resource Locator</label>
+        <label><input type="radio" name="q9" value="c"> Universal Record List</label>
+    </div>
+
+    <div class="question">
+        <h3>10. Which one is commonly used to store data in tables?</h3>
+        <label><input type="radio" name="q10" value="a" required> Database</label>
+        <label><input type="radio" name="q10" value="b"> Speaker</label>
+        <label><input type="radio" name="q10" value="c"> Microphone</label>
+    </div>
+
+    <button type="submit" class="btn">Submit Quiz</button>
+    <button type="reset" class="btn">Try Again</button>
+</form>
+
+<div id="result">
+    <h3>Your Quiz Result</h3>
+    <p id="score"></p>
+    <p id="percentage"></p>
+    <p id="feedback"></p>
+</div>
+
+</section><!-- STUDY SCHEDULE --><section id="schedule">
+    <h2>Suggested Study Schedule</h2><div class="grid">
+    <div class="card">
+        <h3>Morning Session</h3>
+        <p><strong>Time:</strong> 7:00 AM – 8:00 AM</p>
+        <p>Revise concepts and read learning materials.</p>
+    </div>
+
+    <div class="card">
+        <h3>Afternoon Session</h3>
+        <p><strong>Time:</strong> 4:00 PM – 5:00 PM</p>
+        <p>Practice exercises and solve problems.</p>
+    </div>
+
+    <div class="card">
+        <h3>Evening Session</h3>
+        <p><strong>Time:</strong> 7:00 PM – 8:00 PM</p>
+        <p>Review notes and prepare for the next session.</p>
+    </div>
+</div>
+
+<p class="intro">
+    This is a suggested timetable. You can adjust the timings to suit your needs.
+</p>
+
+</section><!-- LEARNING BENEFITS --><section id="benefits">
+    <h2>Benefits of Online Learning</h2><div class="grid">
+    <div class="card">
+        <h3>Learn from Anywhere</h3>
+        <p>Access online learning resources from a suitable location.</p>
+    </div>
+
+    <div class="card">
+        <h3>Save Travel Time</h3>
+        <p>Study online without travelling to a classroom.</p>
+    </div>
+
+    <div class="card">
+        <h3>Learn at Your Pace</h3>
+        <p>Review concepts and practice according to your learning needs.</p>
+    </div>
+
+    <div class="card">
+        <h3>Build Confidence</h3>
+        <p>Practice regularly and track your learning progress.</p>
+    </div>
+</div>
+
+</section><!-- FREQUENTLY ASKED QUESTIONS --><section id="faq">
+    <h2>Frequently Asked Questions</h2><details>
+    <summary>1. What is Online Coaching Institutes?</summary>
+    <p>It is a website that presents learning topics, course options, and practice activities.</p>
+</details>
+
+<details>
+    <summary>2. How do I choose a course?</summary>
+    <p>Explore the courses section and select a course in the registration form.</p>
+</details>
+
+<details>
+    <summary>3. Can beginners use this website?</summary>
+    <p>Yes. The listed learning areas are designed to introduce beginner-level concepts.</p>
+</details>
+
+<details>
+    <summary>4. How can I test my knowledge?</summary>
+    <p>Go to the Knowledge Test Quiz section and answer all 10 questions.</p>
+</details>
+
+<details>
+    <summary>5. How can I contact the institute?</summary>
+    <p>Use the email,
+        <p>Use the email, phone call, or WhatsApp buttons in the Contact section.</p>
+</details>
+
+<details>
+    <summary>6. Does the registration form save my details?</summary>
+    <p>No. This demonstration form displays a confirmation message but does not save your details to a server.</p>
+</details>
+
+</section>
+
+<!-- CONTACT SECTION -->
+
+<section id="contact">
+    <h2>Contact Us</h2>
+
+    <div class="grid">
+
+        <!-- EMAIL -->
+        <div class="card">
+            <h3>📧 Email Address</h3>
+            <p>nachammaln583225243062@nprcolleges.org</p>
+
+            <a class="btn"
+               href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=nachammaln583225243062@nprcolleges.org"
+               target="_blank">
+                Send Email
+            </a>
+        </div>
+
+        <!-- WHATSAPP -->
+        <div class="card">
+            <h3>💬 WhatsApp</h3>
+            <p>8807924051</p>
+
+            <a class="btn"
+               href="https://wa.me/918807924051"
+               target="_blank">
+                Chat on WhatsApp
+            </a>
+        </div>
+
+        <!-- CALL -->
+        <div class="card">
+            <h3>📞 Call Us</h3>
+            <p>8807924051</p>
+
+            <a class="btn" href="tel:+918807924051">
+                Call Now
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <h3>Online Coaching Institutes</h3>
+    <p>Learn Today, Succeed Tomorrow!</p>
+    <p>© 2026 Online Coaching Institutes. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
